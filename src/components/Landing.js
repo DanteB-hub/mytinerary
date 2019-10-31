@@ -21,85 +21,80 @@ class Landing extends Component {
                     </div>                   
                 </main>
                 <Carousel>
-  <Carousel.Item>
-    <div className="carousel-img-wrapper">
-    <img
-      className="w-40"
-      src="https://i.forbesimg.com/media/lists/places/new-york-ny_416x416.jpg"
-      alt="First slide"
-    />
-        <img
-      className="w-40"
-      src="https://i.forbesimg.com/media/lists/places/new-york-ny_416x416.jpg"
-      alt="Third slide"
-    />
-        <img
-      className="w-40"
-      src="https://i.forbesimg.com/media/lists/places/new-york-ny_416x416.jpg"
-      alt="Third slide"
-    />
-        <img
-      className="w-40"
-      src="https://i.forbesimg.com/media/lists/places/new-york-ny_416x416.jpg"
-      alt="Third slide"
-    />
-    </div>
-    <Carousel.Caption>
-    </Carousel.Caption>
-  </Carousel.Item>
-  <Carousel.Item>
-  <div className="carousel-img-wrapper">
-    <img
-      className="w-40"
-      src="https://i.forbesimg.com/media/lists/places/new-york-ny_416x416.jpg"
-      alt="First slide"
-    />
-        <img
-      className="w-40"
-      src="https://i.forbesimg.com/media/lists/places/new-york-ny_416x416.jpg"
-      alt="Third slide"
-    />
-        <img
-      className="w-40"
-      src="https://i.forbesimg.com/media/lists/places/new-york-ny_416x416.jpg"
-      alt="Third slide"
-    />
-        <img
-      className="w-40"
-      src="https://i.forbesimg.com/media/lists/places/new-york-ny_416x416.jpg"
-      alt="Third slide"
-    />
-    </div>
-    <Carousel.Caption>
-    </Carousel.Caption>
-  </Carousel.Item>
-  <Carousel.Item>
-  <div className="carousel-img-wrapper">
-    <img
-      className="w-40"
-      src="https://i.forbesimg.com/media/lists/places/new-york-ny_416x416.jpg"
-      alt="First slide"
-    />
-        <img
-      className="w-40"
-      src="https://i.forbesimg.com/media/lists/places/new-york-ny_416x416.jpg"
-      alt="Third slide"
-    />
-        <img
-      className="w-40"
-      src="https://i.forbesimg.com/media/lists/places/new-york-ny_416x416.jpg"
-      alt="Third slide"
-    />
-        <img
-      className="w-40"
-      src="https://i.forbesimg.com/media/lists/places/new-york-ny_416x416.jpg"
-      alt="Third slide"
-    />
-    </div>
-    <Carousel.Caption>
-    </Carousel.Caption>
-  </Carousel.Item>
-</Carousel>
+                <Carousel.Item>
+                  <div className="carousel-img-wrapper">
+                  <img
+                    className="w-40"
+                    src="https://i.forbesimg.com/media/lists/places/new-york-ny_416x416.jpg"
+                    alt="First slide"
+                  />
+                      <img
+                    className="w-40"
+                    src="https://i.forbesimg.com/media/lists/places/new-york-ny_416x416.jpg"
+                    alt="Third slide"
+                  />
+                      <img
+                    className="w-40"
+                    src="https://i.forbesimg.com/media/lists/places/new-york-ny_416x416.jpg"
+                    alt="Third slide"
+                  />
+                      <img
+                    className="w-40"
+                    src="https://i.forbesimg.com/media/lists/places/new-york-ny_416x416.jpg"
+                    alt="Third slide"
+                  />
+                  </div>
+                </Carousel.Item>
+                <Carousel.Item>
+                <div className="carousel-img-wrapper">
+                  <img
+                    className="w-40"
+                    src="https://i.forbesimg.com/media/lists/places/new-york-ny_416x416.jpg"
+                    alt="Photo of New York"
+                  />
+                      <img
+                    className="w-40"
+                    src="https://i.forbesimg.com/media/lists/places/new-york-ny_416x416.jpg"
+                    alt="Third slide"
+                  />
+                      <img
+                    className="w-40"
+                    src="https://i.forbesimg.com/media/lists/places/new-york-ny_416x416.jpg"
+                    alt="Third slide"
+                  />
+                      <img
+                    className="w-40"
+                    src="https://i.forbesimg.com/media/lists/places/new-york-ny_416x416.jpg"
+                    alt="Third slide"
+                  />
+                  </div>
+                </Carousel.Item>
+                <Carousel.Item>
+                <div className="carousel-img-wrapper">
+                  <img
+                    className="w-40"
+                    src="https://i.forbesimg.com/media/lists/places/new-york-ny_416x416.jpg"
+                    alt="First slide"
+                  />
+                      <img
+                    className="w-40"
+                    src="https://i.forbesimg.com/media/lists/places/new-york-ny_416x416.jpg"
+                    alt="Third slide"
+                  />
+                      <img
+                    className="w-40"
+                    src="https://i.forbesimg.com/media/lists/places/new-york-ny_416x416.jpg"
+                    alt="Third slide"
+                  />
+                      <img
+                    className="w-40"
+                    src="https://i.forbesimg.com/media/lists/places/new-york-ny_416x416.jpg"
+                    alt="Third slide"
+                  />
+                  </div>
+                </Carousel.Item>
+
+              </Carousel>
             </React.Fragment>
 
         )}

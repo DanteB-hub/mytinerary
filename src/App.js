@@ -4,7 +4,6 @@ import Header from "./components/Header.js"
 import Cities from "./components/Cities.js"
 import Login from './components/Login.js'
 import Signup from './components/Signup.js'
-import Footer from './components/Footer.js'
 import 'bootstrap/dist/css/bootstrap.min.css'
 import './components/stylesheets/App.css';
 import {

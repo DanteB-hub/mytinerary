@@ -105,18 +105,16 @@ p {
   margin: 0;
 }
 
-/*.carousel-control-prev,
+.carousel-control-prev,
 .carousel-control-next {
   height: 6vmin;
   width: 6vmin;
   background-size: 100%, 100%;    
   background-image: none;
   position: absolute;
-  bottom: 0;
   top: 57.5vh;
   opacity: .8;
-  z-index: 16;
-}*/
+}
 
 .carousel-control-prev {
   left: 80px;
