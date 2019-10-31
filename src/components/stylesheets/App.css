@@ -1,0 +1,152 @@
+.App {
+  margin: auto;
+  width: 90%;
+}
+
+nav {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  margin: auto;
+  justify-content: space-between;
+}
+
+.Header-nav {
+  width: 100%;
+  justify-content: space-between;
+}
+
+.navbar {
+  width: 50%;
+  margin: 0px;
+}
+
+.bg-light {
+  margin: 0;
+}
+.user-picture {
+  width: 50px;
+  height: 50px;
+}
+
+.dropdown {
+  display: flex;
+  justify-content: space-around;
+}
+
+#dropdown-basic {
+  background-color: white;
+  border: 0px;
+
+}
+
+.btn-success {
+  color: white;
+}
+
+.App-logo {
+  width: 60vmin
+}
+
+.Logo-wrapper {
+  display: flex;
+  justify-content: center;
+}
+
+.home-button {
+  width: 8vmin;
+  margin: auto;
+  display: flex;
+}
+
+.arrow {
+  width: 40vmin;
+  height: 40vmin;
+  margin: auto;
+  display: flex;
+}
+
+body {
+  margin: auto;
+}
+
+.landing-main {
+  margin: auto;
+  width: 90%;
+  display: block;
+}
+.landing-main p {
+  text-align: center;
+}
+
+.account-log {
+  display: flex;
+  justify-content: space-evenly;
+  margin-bottom: 5vmin;
+  font-size: 4vmin;
+}
+
+.landing-main h2 {
+  text-align: center;
+  font-size: 6vmin;
+}
+
+p {
+  font-size: 4vmin;
+}
+
+.carousel-img-wrapper img { 
+  width: 48%;
+  margin: 1%
+}
+
+.carosuel-img-wrapper {
+  float: left;
+  margin: 0;
+}
+
+/*.carousel-control-prev,
+.carousel-control-next {
+  height: 6vmin;
+  width: 6vmin;
+  background-size: 100%, 100%;    
+  background-image: none;
+  position: absolute;
+  bottom: 0;
+  top: 57.5vh;
+  opacity: .8;
+  z-index: 16;
+}*/
+
+.carousel-control-prev {
+  left: 80px;
+}
+
+.carousel-control-next {
+  right: 80px;
+}
+
+.carousel-control-prev-icon {
+  background-image: url("carousel-prev.png")!important;
+}
+
+.carousel-control-next-icon {
+  background-image: url("carousel-next.png")!important;
+}
+
+.carousel-indicators {
+  bottom: -49px;
+}
+
+.carousel-indicators li {
+  border: solid black 1px;
+  border-radius: 50%;
+  width: 15px;
+  height: 15px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.carousel-indicators .active {
+  background-color: black;
+}
