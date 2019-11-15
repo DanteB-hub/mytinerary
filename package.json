@@ -1,35 +1,45 @@
 {
-  "name": "mytinerary",
-  "version": "0.1.0",
-  "private": true,
+  "name": "mytinerary-danteb",
+  "version": "1.0.0",
+  "description": "El cursito",
+  "main": "index.js",
   "dependencies": {
     "bootstrap": "^4.3.1",
+    "concurrently": "^5.0.0",
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "jest": "^24.9.0",
     "react": "^16.11.0",
     "react-bootstrap": "^1.0.0-beta.14",
-    "react-burger-menu": "^2.6.11",
     "react-dom": "^16.11.0",
+    "react-redux": "^7.1.3",
     "react-router-dom": "^5.1.2",
-    "react-scripts": "3.2.0"
+    "react-scripts": "^3.2.0",
+    "redux": "^4.0.4",
+    "redux-thunk": "^2.3.0"
+  },
+  "devDependencies": {
+    "enzyme": "^3.10.0",
+    "enzyme-adapter-react-16": "^1.15.1",
+    "nodemon": "^1.19.4"
   },
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "test": "jest",
+    "client": "cd client && npm start",
+    "server": "nodemon server.js",
+    "concurrently": "concurrently --kill-others-on-fail \"npm run server\" \"npm run client\""
   },
-  "eslintConfig": {
-    "extends": "react-app"
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DanteB-hub/mytinerary.git"
   },
-  "browserslist": {
-    "production": [
-      ">0.2%",
-      "not dead",
-      "not op_mini all"
-    ],
-    "development": [
-      "last 1 chrome version",
-      "last 1 firefox version",
-      "last 1 safari version"
-    ]
-  }
+  "keywords": [
+    "Cursito"
+  ],
+  "author": "SsethTzentach",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/DanteB-hub/mytinerary/issues"
+  },
+  "homepage": "https://github.com/DanteB-hub/mytinerary#readme"
 }

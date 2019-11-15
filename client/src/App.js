@@ -8,9 +8,7 @@ import 'bootstrap/dist/css/bootstrap.min.css'
 import './components/stylesheets/App.css';
 import {
   BrowserRouter as Router,
-  Switch,
   Route,
-  Link
 } from "react-router-dom";
 
 
@@ -37,3 +35,5 @@ class App extends Component  {
 }
 
 export default App;
+
+//

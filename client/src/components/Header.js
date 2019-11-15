@@ -2,10 +2,6 @@ import React, { Component } from 'react';
 import Logo from "./images/MYtineraryLogo.png"
 import Dropdown from 'react-bootstrap/Dropdown'
 import Image from 'react-bootstrap/Image'
-import Navbar from 'react-bootstrap/Navbar'
-import NavDropdown from 'react-bootstrap/NavDropdown'
-import Nav from 'react-bootstrap/Nav'
-import Button from 'react-bootstrap/Button'
 
 
 class Header extends Component {
