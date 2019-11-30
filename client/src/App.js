@@ -4,6 +4,7 @@ import Header from "./components/Header.js"
 import Cities from "./components/Cities.js"
 import Login from './components/Login.js'
 import Signup from './components/Signup.js'
+import Itinerary from './components/Itinerary'
 import 'bootstrap/dist/css/bootstrap.min.css'
 import './components/stylesheets/App.css';
 import {
@@ -20,11 +21,10 @@ class App extends Component  {
             <Header></Header>
 
               <Route exact path="/" component={Landing}/>
-              <Route path="/Landing" component={Landing}/>
-              <Route path="/Cities" component={Cities}/>
+              <Route exact path="/Cities" component={Cities}/>
               <Route path="/Login" component={Login}/>
               <Route path="/Signup" component={Signup}/>
-
+              <Route path="/Cities/:id" component={Itinerary}/>
         </div>
 
 

@@ -58,6 +58,11 @@ nav {
   margin: auto;
   display: flex;
 }
+.back-arrow {
+  width: 8vmin;
+  margin: auto;
+  display: flex;
+}
 
 .arrow {
   width: 40vmin;
@@ -174,4 +179,13 @@ p {
 
 .carousel-indicators .active {
   background-color: black;
+}
+
+.itineraryView {
+  padding: 0;
+  list-style-type: none;
+}
+
+.itineraryWrapper {
+  padding: 0;
 }

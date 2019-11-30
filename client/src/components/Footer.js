@@ -15,7 +15,7 @@ class Footer extends Component {
     render()
         {  return(
                     <footer>
-                        <Link to="/Landing">
+                        <Link to="/">
                         <img className="home-button" alt="" src={home}/>
                         </Link>
                     </footer> 
