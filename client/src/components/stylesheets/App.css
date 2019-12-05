@@ -181,11 +181,12 @@ p {
   background-color: black;
 }
 
-.itineraryView {
+.itineraryCard {
   padding: 0;
-  list-style-type: none;
+  border: 1px black solid;
 }
 
-.itineraryWrapper {
+.itinerariesWrapper {
   padding: 0;
+  list-style-type: none;
 }

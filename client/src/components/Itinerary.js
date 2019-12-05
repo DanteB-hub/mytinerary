@@ -6,14 +6,13 @@ import {BrowserRouter as Router,
     } from "react-router-dom";
 import BackArrow from './images/backarrow.png'
 import Footer from './Footer.js'
-
+import ItineraryList from './ItineraryList'
 
 class Itinerary extends Component {
         constructor (props) {
             super(props);
             this.state = {
-                itineraries: [],
-                isClicked: false
+                itineraries: []
             }
         }
 
@@ -21,42 +20,25 @@ class Itinerary extends Component {
             console.log(this.props.match.params.id)
             let fetch = "http://localhost:8080/itineraries/" + this.props.match.params.id
             this.props.itineraryGet(fetch)
-        }
+            }
+        
 
         render (){ 
             return(
                 <main>
                 <h1>Hola</h1> 
-                <ul>
-                    {this.props.itineraries.map((itinerary) => {
-                        return ( 
-                            <React.Fragment>
-                                <ul className="itineraryWrapper">
-                                    <div>
-                                        <ul className="itineraryView    ">
-                                            <li>
-                                                <h4>{itinerary.title}</h4>
-                                                <img src="https://www.pathcenter.co.il/wp-content/uploads/2014/03/user_icon.png" height="50"/>
-                                                <Link to="#"><h6> {itinerary.postedBy.username} </h6></Link>
-                                                <ul>
-                                                    <li> User Ratings: {itinerary.rating}/5 </li>
-                                                    <li> Price: {itinerary.price} U$D </li>
-                                                    <li> Duration in minutes: {itinerary.duration} </li>
-                                                </ul>
-                                                {itinerary.hashtags.map(hash => {
-                                                    return (
-                                                    <Link to={hash}>{hash + " "}</Link>)
-
-                                                })}
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </ul>
-
-                            <Footer></Footer>
-                            </React.Fragment>
-                        )
-                        })}
+                <ul className="itinerariesWrapper">
+                    {this.props.itineraries.map(itinerary => {
+                    return (<ItineraryList title={itinerary.title} 
+                                           postedBy={itinerary.postedBy}
+                                           rating={itinerary.rating}
+                                           price={itinerary.price}
+                                           duration={itinerary.duration}
+                                           hashtags={itinerary.hashtags}
+                                           _id={itinerary._id}
+                                           activities={itinerary.activities}>
+                                           
+                            </ItineraryList>)})}
                 </ul>
                 </main>
             )}

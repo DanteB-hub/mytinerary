@@ -93,6 +93,7 @@ class Landing extends Component {
                 </Carousel.Item>
 
               </Carousel>
+
             </React.Fragment>
 
         )}
