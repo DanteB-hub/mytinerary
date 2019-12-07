@@ -8,7 +8,7 @@ const getAll= (req,res)=>{
 const getOneCity = (req,res)=>{
 
     Itinerary
-    .find({forCity:req.params.id}).then((itineraries)=>{res.json(itineraries).status(204)})
+    .find({}).or([{forCity:req.params.id}, {test: true}]).then((itineraries)=>{res.json(itineraries).status(204)})
     .catch(err => console.log(err))
 }
 

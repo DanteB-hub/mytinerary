@@ -4,6 +4,7 @@ import { connect } from 'react-redux'
 import {BrowserRouter as Router,
         Link 
     } from "react-router-dom";
+import {imagesUrl} from "./Constants";
 
     class ItineraryList extends Component {
         constructor(props) {
@@ -72,8 +73,8 @@ render ()
                             {this.props.activities.map(activity => {
                                 return (
                             <React.Fragment>
-                            <li key={activity.activity_id}>{activity.name}</li>
-                            <img src={"/components/images/5de1a8ea04d1db00000a6c8f.jpg" /*+ activity.localUrl*/}></img>
+                            <li key={activity.activity_id}>{activity.name}
+                            <img classname="w-40" src={imagesUrl + activity.localUrl}></img></li>
                             </React.Fragment>
                             )})}
                             </ul>

@@ -7,8 +7,9 @@ const itinerarySchema =new mongoose.Schema({
     duration: Number,
     price: Number,
     postedBy: { name: String, pfpUrl: String },
-    hashtaghs: String,
-    forCity: { type: mongoose.Schema.Types.ObjectId, ref: "city"}
+    hashtaghs: Array,
+    forCity: { type: mongoose.Schema.Types.ObjectId, ref: "city"},
+    activities: Array
 })
 
 module.exports = mongoose.model('itinerary', itinerarySchema)

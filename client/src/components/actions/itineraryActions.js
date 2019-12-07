@@ -1,6 +1,6 @@
-function itineraryGet(fetcha) {
+function itineraryGet(fetchs) {
     return (dispatch) => {
-        return fetch(fetcha).then((res) => {
+        return fetch(fetchs).then((res) => {
             return res.json()
     }).then((data) => {
         dispatch({
