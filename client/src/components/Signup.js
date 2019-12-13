@@ -1,9 +1,10 @@
 import React, { Component } from 'react';
 import Footer from './Footer.js'
+import PasswordField from './PasswordField'
 import {
     Link 
 } from "react-router-dom";
-import { timingSafeEqual } from 'crypto';
+
 
 class Signup extends Component {
     constructor(props) {
@@ -11,12 +12,17 @@ class Signup extends Component {
         this.state = {
             email : "",
             password : "",
-            pfpurl : ""
+            pfpurl : "",
+            username: ""
         };
 
-        this.handleInputChange = this.handleInputChange.bind(this);
+        this.handleInput = this.handleInput.bind(this);
     }
-        handleInputChange(event) {
+
+    
+        handleChangeValue = e => this.setState({password: e.target.value});
+
+        handleInput(event) {
             const target = event.target;
             const value = target.value;
             const name = target.name;
@@ -40,13 +46,20 @@ class Signup extends Component {
                         <p>This is where you sign up</p>
                         <form onSubmit={this.handleSubmit} name="New Account">
                             <label>E-mail: <br/>
-                            <input id="email" type="email" name="email" value={this.state.email} onChange={this.handleInputChange} placeholder="examble@example.com" required/></label>
+                                <input id="email" type="email" name="email" value={this.state.email} onChange={this.handleInput} placeholder="examble@example.com" required/>
+                            </label>
                             
+                            <label>Username: <br/>
+                                <input id="username" type="text" name="username" value={this.state.username} onChange={this.handleInput} required/>
+                            </label>
+
                             <label>Password: <br/>
-                            <input id="password" type="password" name="password" value={this.state.password} onChange={this.handleInputChange} required/></label>
+                                <PasswordField password={this.state.password} onChangeValue={this.handleChangeValue}></PasswordField>
+                            </label>
 
                             <label>Link to Profile Picture (optional): <br/>
-                            <input id="pfpurl" type="text" name="pfpurl" value={this.state.pfpurl} onChange={this.handleInputChange}/></label>
+                                <input id="pfpurl" type="text" name="pfpurl" value={this.state.pfpurl} onChange={this.handleInput}/>
+                            </label>
 
                             <input type="submit" value="Create Account"/>
 

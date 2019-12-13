@@ -1,5 +1,5 @@
 const router = require('express').Router()
-const {getImage} = require('./images.controller'); 
+const {getImage} = require('../controllers/images.controller'); 
 
 
 router.get("/backendImages/activities/:activID?", getImage)

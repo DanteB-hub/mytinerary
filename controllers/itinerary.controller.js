@@ -1,4 +1,4 @@
-const Itinerary = require("./itinerary.model")
+const Itinerary = require("../models/itinerary.model")
 
 const getAll= (req,res)=>{
     Itinerary
