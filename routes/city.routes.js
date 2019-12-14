@@ -7,18 +7,8 @@ router.get("/", function (req, res){
     res.send("panini")
 })
 
-router.post("/cities", cityController.postCity)
+router.post("/cities/post", cityController.postCity)
 
 
 module.exports = router
 
-/*
-onChange = name => event => {
-    let value_ = name === "image"
-    ? event.target.files[0]
-    : event.target.value
-
-
-    this.setSate({[name]: value_})
-}
-*/

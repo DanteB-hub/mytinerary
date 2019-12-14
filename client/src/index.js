@@ -9,8 +9,9 @@ import thunk from 'redux-thunk';
 import cityReducer from './components/reducers/cityReducer'
 import buscadorReducer from './components/reducers/buscadorReducer'
 import itineraryReducer from './components/reducers/itineraryReducer'
+import userReducer from './components/reducers/userReducer'
 
-const combinedReducers = combineReducers({cityReducer,buscadorReducer, itineraryReducer});
+const combinedReducers = combineReducers({cityReducer,buscadorReducer, itineraryReducer, userReducer});
 const store = createStore(combinedReducers, applyMiddleware(thunk));
 
 

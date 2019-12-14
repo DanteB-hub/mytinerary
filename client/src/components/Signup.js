@@ -1,9 +1,13 @@
 import React, { Component } from 'react';
 import Footer from './Footer.js'
 import PasswordField from './PasswordField'
+import {createUser} from './actions/userActions'
+import {connect} from "react-redux"
 import {
     Link 
 } from "react-router-dom";
+
+
 
 
 class Signup extends Component {
@@ -17,6 +21,7 @@ class Signup extends Component {
         };
 
         this.handleInput = this.handleInput.bind(this);
+        this.handleSubmit = this.handleSubmit.bind(this);
     }
 
     
@@ -35,7 +40,8 @@ class Signup extends Component {
 
         handleSubmit(event) {
             event.preventDefault();
-            console.log("wesa")
+            console.log(this.state)
+            this.props.createUser(this.state)
         }
         
     render()
@@ -75,4 +81,10 @@ class Signup extends Component {
         )};
 }
 
-export default Signup;
+
+const mapStateToProps = (state) => {
+    return {
+        user: state.userReducer
+    }
+}
+export default connect(mapStateToProps, {createUser})(Signup);

@@ -20,7 +20,7 @@ const postCity = (req, res) => {
 
    
      City
-    .find({ name:newCity.name }, function (err, city) {
+    /*.find({ name:newCity.name }, function (err, city) {
         if(city.length > 0) return res.send("This city is already in our database")
         else { 
             newCity.save()
