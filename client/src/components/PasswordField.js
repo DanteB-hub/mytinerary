@@ -26,13 +26,13 @@ class PasswordField extends Component {
             if(!this.state.showPswrd) {
                 return(           
                     <React.Fragment>
-                        <input id="password" name="password" type="password" value={this.props.password} onChange={this.props.onChangeValue}></input>
+                        <input id="password" name="password" type="password" value={this.props.password} onChange={this.props.onChangeValue} required></input>
                         <button type="button" onClick={this.handleClick}>Show/Hide Password</button>
                     </React.Fragment>
                  )} else {
                      return(
                         <React.Fragment>
-                            <input id="password" name="password" type="text" value={this.props.password} onChange={this.props.onChangeValue}>
+                            <input id="password" name="password" type="text" value={this.props.password} onChange={this.props.onChangeValue} required>
                                 </input><button type="button" onClick={this.handleClick}>Show/Hide Password</button>
                         </React.Fragment>
                      )
