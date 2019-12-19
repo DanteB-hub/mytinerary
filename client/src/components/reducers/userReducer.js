@@ -4,8 +4,13 @@ const userReducer = (state = [], action) => {
           case'NEW_USER':
             console.log(action.payload)
             return action.payload
-        default:
-          return state
+
+          case "USER_LOGIN":
+            console.log(action.payload)
+           return action.payload
+           
+          default: 
+            return state
       }
     }
     

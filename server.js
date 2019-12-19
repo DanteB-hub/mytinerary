@@ -7,10 +7,14 @@ const routerItinerary = require('./routes/itinerary.routes')
 const routerImage = require('./routes/images.routes')
 const routerUser = require('./routes/user.routes')
 const bodyParser = require("body-parser");
+const passport = require('passport')
 
 app.use(cors())
 app.use(bodyParser.json())
 app.use(bodyParser.urlencoded( {extended: true}))
+
+app.use(passport.initialize());
+require("./passport.js");
 
 app.use(routerCity)
 app.use(routerItinerary)

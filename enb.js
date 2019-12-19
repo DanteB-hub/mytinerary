@@ -1,6 +1,4 @@
-
-
-json = {secretKey: "illusion"}
+const secretKey = {secretKey: "illusion"}
 
 
 module.exports = {
