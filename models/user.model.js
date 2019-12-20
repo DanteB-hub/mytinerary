@@ -7,8 +7,8 @@ const userSchema = new mongoose.Schema({
     email: String,
     email_lower: String,
     pfpurl: String,
-    google_id: String,
-    favorites: [{type:mongoose.Schema.Types.ObjectId, ref:'itinerary'}]
+    googleID: String,
+    favorites: [{ type: mongoose.Schema.Types.ObjectId, ref: 'itinerary' }]
 })
 
-module.exports = mongoose.model('user',userSchema)
+module.exports = mongoose.model('user', userSchema)

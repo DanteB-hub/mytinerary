@@ -13,24 +13,26 @@ import {
 } from "react-router-dom";
 
 
-class App extends Component  {
-  render (){ return (
-    <React.Fragment>
-    <Router>
-        <div className="App">
+class App extends Component {
+  render() {
+    return (
+      <React.Fragment>
+        <Router>
+          <div className="App">
             <Header></Header>
 
-              <Route exact path="/" component={Landing}/>
-              <Route exact path="/Cities" component={Cities}/>
-              <Route path="/Login" component={Login}/>
-              <Route path="/Signup" component={Signup}/>
-              <Route path="/Cities/:id" component={Itinerary}/>
-        </div>
+            <Route exact path="/" component={Landing} />
+            <Route path="/home" component={Landing} />
+            <Route exact path="/Cities" component={Cities} />
+            <Route path="/Login" component={Login} />
+            <Route path="/Signup" component={Signup} />
+            <Route path="/Cities/:id" component={Itinerary} />
+          </div>
 
 
-    </Router>
-    </React.Fragment>
-  )
+        </Router>
+      </React.Fragment>
+    )
   }
 }
 
