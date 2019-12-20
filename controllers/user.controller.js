@@ -95,8 +95,39 @@ const test = (req, res) => {
   }
 
 
+  const userRedirect = (req, res) => {
+    const payload = {
+        id: req.user.id,
+        username: req.user.username,
+    };
+    const options = {expiresIn: 2000};
+    
+    jwt.sign(
+    payload,
+    key.secretKey.secretKey,
+    options,
+    (err, token) => {
+        if(err){
+         return res.json({
+            payload:payload,
+            success: false,
+            token: "There was an error",
+        });
+        }else {
+            // res.json({
+            // payload: payload,
+            // success: true,
+            // token: token});
+            // console.log('login google back ok')
+            res.redirect(`http://localhost:3000/`) 
+        }
+    }
+    )
+};
+
 module.exports = {
     userLogin,
     createUser,
-    test
+    test,
+    userRedirect
 }

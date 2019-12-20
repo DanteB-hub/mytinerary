@@ -9,6 +9,11 @@ const userReducer = (state = [], action) => {
             console.log(action.payload)
            return action.payload
            
+           case "STORE_TOKEN_USER":
+            return Object.assign({}, state, {
+              token: action.token,
+            })
+
           default: 
             return state
       }

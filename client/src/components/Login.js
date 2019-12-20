@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import Footer from './Footer.js'
 import PasswordField from './PasswordField'
-import {userLogin} from './actions/userActions'
+import {userLogin, storeUserToken} from './actions/userActions'
 import {connect} from "react-redux"
 import {
     Link 
@@ -14,6 +14,7 @@ class Login extends Component {
         this.state = {
             email : "",
             password : "",
+            token: ""
         };
 
         this.handleInput = this.handleInput.bind(this);
@@ -45,7 +46,7 @@ class Login extends Component {
             <main>
                 <div className="landing-main">
                     <p>This is where you log in</p>
-                    <form onSubmit={this.handleSubmit} name="New Account">
+                    <form onSubmit={this.handleSubmit} name="Login">
 
                             <label>E-mail: <br/>
                                 <input id="email" type="email" name="email" value={this.state.email} onChange={this.handleInput} placeholder="youremail@mail.com" required/>
@@ -59,9 +60,7 @@ class Login extends Component {
                     </form>
                 </div>
             </main>
-            <form action="Login/user/google">
-                <button>Log in with Google</button>
-            </form>
+            <a href="http://localhost:8080/user/google">Login with Google</a>
             <Footer></Footer>
             </React.Fragment>       
 
@@ -70,7 +69,8 @@ class Login extends Component {
 
 const mapStateToProps = (state) => {
     return {
-        user: state.userReducer
+        user: state.userReducer,
+        token: state.userReducer
     }
 }
-export default connect(mapStateToProps, {userLogin})(Login);
+export default connect(mapStateToProps, {userLogin, storeUserToken})(Login);

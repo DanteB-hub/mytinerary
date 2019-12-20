@@ -33,7 +33,16 @@ function userLogin(state) {
         }}
 
 
+function storeUserToken(token) { //stores token and decoded token user info 
+          return {
+              type: "STORE_TOKEN_USER",
+              payload: token
+          }
+        }
+
+
 export {
     createUser,
-    userLogin
+    userLogin,
+    storeUserToken
 }
